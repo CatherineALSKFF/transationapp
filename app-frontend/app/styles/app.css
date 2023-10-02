@@ -79,6 +79,8 @@ flex-direction: column;
   padding: 18px 75px;
  
 }
+
+
 .submit-button{
   background: rgba(241, 240, 240, 0.50);
   border-radius: 15px;
@@ -89,6 +91,13 @@ flex-direction: column;
   border: none;
   box-shadow: 0px 4px 4px 0px rgba(168, 128, 128, 0.25);
   font-weight: 700;
+
+}
+.submit-button:hover,#amount:hover,#account-id:hover {
+  cursor: pointer;
+  box-shadow: 4px 6px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 0.5px solid rgba(172, 100, 227, 0.35);
+
 
 }
 
@@ -115,6 +124,7 @@ justify-content: space-between;
 padding: 23px 18px;
 font-family: inter;
 border: 0.5px solid rgba(172, 100, 227, 0.35);
+margin-bottom: 9px;
 
 }
 
