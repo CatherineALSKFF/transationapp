@@ -105,7 +105,7 @@ npm run test
 5. Avoid duplication and extract re-usable modules where it makes sense. We want to see your approach to creating a codebase that is easy to maintain.
 6. Push your code to the new `implementation` branch. We encourage you to commit and push your changes regularly as it's a good way for you to showcase your thinking process.
 7. Create a new pull request, but please **do not merge it**.
-8. Document the tech decisions you've made by creating a new review on your PR ([see how](https://www.loom.com/share/94ae305e7fbf45d592099ac9f40d4274)).
+8. Document the tech decisions you've made by creating a new review on your PR 
 9. Await further instructions from the hiring team.
 
 ## Time estimate
@@ -116,4 +116,4 @@ Also, there is no countdown. The estimate is for you to plan your time.
 
 ---
 
-Authored by [Alva Labs](https://www.alvalabs.io/).
+
