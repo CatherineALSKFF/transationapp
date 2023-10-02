@@ -1,26 +1,24 @@
-# Backend Boilerplate Ruby on Rails
+# README
 
-## Project Structure
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-This project follows [the standard Rails project structure](https://www.tutorialspoint.com/ruby-on-rails/rails-directory-structure.htm).
+Things you may want to cover:
 
-## Getting started
+* Ruby version
 
-1. Make sure the required version of Ruby (3.1.2) is configured on your local env.
+* System dependencies
 
-```bash
-curl -sSL https://get.rvm.io | bash
-rvm install 3.1.2
-```
+* Configuration
 
-2. Build your app.
+* Database creation
 
-```bash
-bundle update --bundler && bundle update && npm install && bin/rails db:migrate RAILS_ENV=development
-```
+* Database initialization
 
-3. Start your app.
+* How to run the test suite
 
-```bash
-bin/rails server
-```
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
