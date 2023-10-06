@@ -40,13 +40,6 @@ class Api::V1::AccountsController < ApplicationController
   private
 
   def set_account
-    @account = Account.find(params[:id])
-
-    if !@account
-      @account = Account.new(account_id: params[:id], balance: 0)
-      @account.save!
-    end
+    @account = Account.find(params[:id]) 
   end
-
-  
 end
