@@ -17,22 +17,27 @@ export default class TransactionHistoryComponent extends Component {
     super.didInsertElement(...arguments);
     this.transactions = await this.apiService.get('http://127.0.0.1:3000/api/v1/transactions');
     console.log(this.transactions);
-    // Pass the transactions variable to the component as an argument
-    // this.args.transactions = this.transactions;
+  
+
   }
-  Actions
-  @action
-  async handleSubmit(event) {
-    event.preventDefault();
-    const accountId = this.element.querySelector('#account-id').value;
-    const amount = this.element.querySelector('#amount').value;
-    const body = {
-      account_id: accountId,
-      amount: amount,
-    };
-    await this.apiService.post('http://127.0.0.1:3000/api/v1/transactions', body);
-    this.transactions = await this.apiService.get('http://127.0.0.1:3000/api/v1/transactions');
-    this.element.querySelector('#account-id').value = '';
-    this.element.querySelector('#amount').value = '';
-  }
+  // Actions
+  // @action
+  // async handleSubmit(event) {
+  //   event.preventDefault();
+  //   const accountId = this.element.querySelector('#account-id').value;
+  //   const amount = this.element.querySelector('#amount').value;
+  //   const body = {
+  //     account_id: accountId,
+  //     amount: amount,
+  //   };
+  //   try {
+  //     await this.apiService.post('http://127.0.0.1:3000/api/v1/transactions', body);
+  //     await this.getTransactions();
+  //     this.element.querySelector('#account-id').value = '';
+  //     this.element.querySelector('#amount').value = '';
+  //   } catch (error) {
+  //     console.error('Error:', error);
+  //   }
+    
+  // }
 }
