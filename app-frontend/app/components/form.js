@@ -4,7 +4,7 @@ import Component from '@ember/component';
 import { action } from '@ember/object';
 
 export default class TransactionFormComponent extends Component {
-    @service apiService;
+  @service apiService;
   @action
   async handleSubmit(event) {
     event.preventDefault();
@@ -21,7 +21,13 @@ export default class TransactionFormComponent extends Component {
 
     try {
       // Make a POST request to the API to create a new transaction
-      await this.apiService.post('http://127.0.0.1:3000/api/v1/transactions/', body);
+      await this.apiService.post(
+        'http://127.0.0.1:3000/api/v1/transactions/',
+        body
+      );
+      this.transactions = await this.apiService.get(
+        'http://127.0.0.1:3000/api/v1/transactions'
+      );
 
       // Clear the form
       this.element.querySelector('#account-id').value = '';
@@ -30,4 +36,4 @@ export default class TransactionFormComponent extends Component {
       console.error('Error:', error);
     }
   }
-};
+}

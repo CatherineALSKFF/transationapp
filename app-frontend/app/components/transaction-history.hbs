@@ -1,7 +1,32 @@
- {{!-- app/components/transaction-history.hbs --}}
-
-
+{{!-- app/components/transaction-history.hbs --}}
 <div class="t-history">
+    <div class="t-container">
+         <h1>Transactions History</h1>
+{{#each this.transactions as |transaction|}}        
+            <div class="transaction">
+            <div class="info-transaction">
+            <p class="account-id" >Account ID: {{transaction.account.id}}</p>
+            <p class="new-balance">CURRENT BALANCE: {{transaction.account.balance}}</p>
+            </div>
+            <p class="positive-t ">$ {{transaction.amount}}</p>    
+            </div>
+        {{/each}}
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+{{!-- <div class="t-history">
     <div class="t-container">
          <h1>Transactions History</h1>
 {{#each this.transactions as |transaction|}}        
@@ -14,7 +39,24 @@
             </div>
         {{/each}}
     </div>
-</div>
+</div> --}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -41,16 +83,6 @@
 </div> --}}
 
 
-
-
-
-
-
- {{!-- {{#if transaction.amount > 0}}
-             <p class="positive-t">+$ {{transaction.amount}}</p>
-            {{else}}
-             <p class="negative-t">-$ {{transaction.amount}}</p>
-            {{/if}}  --}}
 
 
 
